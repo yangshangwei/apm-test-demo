@@ -7,13 +7,14 @@ package com.artisan.service;
  * @date 2020/9/29 21:35
  * @mark: show me the code , change the world
  */
-import java.util.List;
 
 import com.artisan.model.Artisan;
 
-public interface ArtisanService {
+import java.util.List;
 
-    List<Artisan> getArtisanList();
+public interface ArtisanService2 {
 
-    List<Artisan> selectArtisanByName(String name);
+    List<Artisan> getArtisanList2();
+
+    List<Artisan> selectArtisanByName2(String name);
 }

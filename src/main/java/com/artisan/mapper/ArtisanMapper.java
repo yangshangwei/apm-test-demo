@@ -5,6 +5,8 @@ import java.util.List;
 import org.apache.ibatis.annotations.Mapper;
 
 import com.artisan.model.Artisan;
+import org.apache.ibatis.annotations.Param;
+
 /**
  *
  * @author yangshangwei
@@ -19,5 +21,6 @@ public interface ArtisanMapper {
      *  查询全部数据
      */
     List<Artisan> selectArtisan();
+    List<Artisan> selectArtisanByName(@Param("name")String name );
 
 }

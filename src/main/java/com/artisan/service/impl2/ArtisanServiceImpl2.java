@@ -1,4 +1,4 @@
-package com.artisan.service.impl;
+package com.artisan.service.impl2;
 
 /**
  * @author 小工匠
@@ -7,28 +7,28 @@ package com.artisan.service.impl;
  * @date 2020/9/29 21:36
  * @mark: show me the code , change the world
  */
-import java.util.List;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
 import com.artisan.mapper.ArtisanMapper;
 import com.artisan.model.Artisan;
-import com.artisan.service.ArtisanService;
+import com.artisan.service.ArtisanService2;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @Service
-public class ArtisanServiceImpl implements ArtisanService {
+public class ArtisanServiceImpl2 implements ArtisanService2 {
 
     @Autowired
     private ArtisanMapper artisanMapper;
 
     @Override
-    public List<Artisan> getArtisanList() {
+    public List<Artisan> getArtisanList2() {
         return artisanMapper.selectArtisan();
     }
 
     @Override
-    public List<Artisan> selectArtisanByName(String name) {
+    public List<Artisan> selectArtisanByName2(String name) {
         return artisanMapper.selectArtisanByName(name);
     }
 
