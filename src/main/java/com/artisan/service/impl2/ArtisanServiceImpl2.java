@@ -32,4 +32,9 @@ public class ArtisanServiceImpl2 implements ArtisanService2 {
         return artisanMapper.selectArtisanByName(name);
     }
 
+    @Override
+    public List<Artisan> selectArtisanByNameAndSex(String name, String sex) {
+        return artisanMapper.selectArtisanByNameAndSex(name,sex);
+    }
+
 }

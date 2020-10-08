@@ -8,9 +8,8 @@ import com.artisan.model.Artisan;
 import org.apache.ibatis.annotations.Param;
 
 /**
- *
  * @author yangshangwei
- *
+ * <p>
  * 增加@Mapper这个注解之后，Spring 启动时会自动扫描该接口，这样就可以在需要使用时直接注入 Mapper 了
  */
 
@@ -18,9 +17,11 @@ import org.apache.ibatis.annotations.Param;
 public interface ArtisanMapper {
 
     /**
-     *  查询全部数据
+     * 查询全部数据
      */
     List<Artisan> selectArtisan();
-    List<Artisan> selectArtisanByName(@Param("name")String name );
 
+    List<Artisan> selectArtisanByName(@Param("name") String name);
+
+    List<Artisan> selectArtisanByNameAndSex(@Param("name") String name, @Param("sex") String sex);
 }

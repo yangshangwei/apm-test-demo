@@ -62,4 +62,9 @@ public class ArtisanController {
         return Result.success(artisanService2.selectArtisanByName2("小笼包"));
     }
 
+
+    @GetMapping("/artisanbyNameAndSex")
+    public Result<List<Artisan>> selectArtisnByNameAndSex()  {
+        return Result.success(artisanService2.selectArtisanByNameAndSex("小笼包","女"));
+    }
 }

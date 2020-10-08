@@ -17,4 +17,7 @@ public interface ArtisanService2 {
     List<Artisan> getArtisanList2();
 
     List<Artisan> selectArtisanByName2(String name);
+
+
+    List<Artisan> selectArtisanByNameAndSex(String name,String sex);
 }
